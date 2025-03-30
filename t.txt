@@ -1,0 +1,226 @@
+ <section id="courses">
+        <div class="container">
+            <h1>Courses</h1>
+            <div class="courses">
+                <div class="course-card">
+                    <img src="Image/jee.jpg" alt="Course Image">
+                    <h3 class="course-name">JEE</h3>
+                    <p></p>Details of JEE Course </p>
+                    <button>
+                    <a href="course/jee.html" class="know-more-btn">Read More</a>
+                    </button>
+                </div>
+                <div class="course-card">
+                    <img src="Image/neet.jpg" alt="Course Image">
+                    <h3 class="course-name">NEET</h3>
+                    <p>Details of  NEET Course </p>
+                    <button>
+                        <a href="course/neet.html" class="know-more-btn">Read More</a>
+                    </button>
+       
+                </div>
+                <div class="course-card">
+                    <img src="Image/banking.jpg" alt="Course Image">
+                    <h3 class="course-name">BANKING</h3>
+                    <p>Details of Banking Course </p>
+                    <button>
+                        <a href="course/banking.html" class="know-more-btn">Read More</a>
+                    </button>
+       
+                </div>
+                <div class="course-card">
+                    <img src="Image/comp.jpg" alt="Course Image">
+                    <h3 class="course-name">COMPUTER COURES</h3>
+                    <p>Details of Computer Course</p>
+                    <button>
+                        <a href="course/c s.html" class="know-more-btn">Read More</a>
+                    </button>
+    
+                </div>
+            </div>           
+        </div>
+    </section>
+    <section id="contact">
+        <div class="contain">
+            <h1>Contact Us</h1>
+            
+            <img src="Image/Map.png" alt="Office Image" class="img">
+            
+            <p class="fw">Office</p>
+            <p>Chh. Sambhajinagar, India</p>
+            
+            <p class="fw">Email</p>
+            <p><a href="mailto:xyz@gmail.com">xyz@gmail.com</a></p>
+            
+            <p class="fw">Call Us</p>
+            <p><a href="tel:+919876543210">+91 9876543210</a></p>
+            
+            <p class="fw">Our Timing</p>
+            <p>Mon-Sat: 10:00 AM - 6:00 PM</p>
+    
+            <h1>Contact Form</h1>
+            <form action="submit_form.php" method="POST">
+                <div class="w">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                </div>
+    
+                <div class="w">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+    
+                <div class="w">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+                </div>
+    
+                <button type="submit" class="btn">Submit</button>
+            </form>
+    
+            <h3>Follow Us</h3>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">LinkedIn</a></li>
+            </ul>
+        </div>
+    </section>
+
+
+
+    css
+
+
+    
+/* Courses Section */
+.courses {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping */
+    justify-content: center;
+    gap: 20px; /* Space between items */
+    margin-top: 40px;
+}
+
+/* Course Card */
+.course-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(25% - 20px); /* 4 cards per row */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column; /* Align content properly */
+    justify-content: space-between; /* Align text & button at the bottom */
+    min-height: 350px; /* Ensures uniform height */
+}
+
+/* Image Styling */
+.course-card img {
+    width: 100%;  
+    height: 150px; 
+    object-fit: contain; 
+    border-radius: 8px;
+    display: block;
+}
+
+/* Course Title */
+.course-card h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+/* Course Description */
+.course-card p {
+    flex-grow: 1; /* Push button to the bottom */
+    font-size: 16px;
+    padding: 0 10px;
+}
+
+/* Button Styling */
+.course-card button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.course-card button:hover {
+    background-color: #45a049;
+}
+.contain {
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Heading styles */
+h1 {
+    color: black;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+h3 {
+    margin-top: 20px;
+    color: black;
+}
+
+/* Image styling */
+.img {
+    width: 40%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+/* Mobile View */
+
+
+    /* courses css */
+    .course-card {
+        width: calc(50% - 15px); /* 2 cards per row */
+        padding: 10px; /* Reduce padding */
+        min-height: 250px; /* Reduce height */
+        font-size: 14px; /* Decrease text size */
+    }
+
+    .course-card img {
+        height: 60px; /* Smaller images */
+    }
+
+    .course-card h3 {
+        font-size: 18px; /* Reduce heading size */
+    }
+
+    .course-card p {
+        font-size: 13px; /* Reduce paragraph text */
+    }
+
+    .course-card button {
+        padding: 8px 16px; /* Smaller button */
+        font-size: 14px;
+    }
+    /* contact */
+    form{
+        width: 75%;
+        padding: 15px;
+    }
+    h1{
+        font-size: 15px;
+    }
+    p{
+        font-size: 10px;
+    }
+}
+
+
